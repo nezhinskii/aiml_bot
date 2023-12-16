@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ACQUAINTANCE -->
+
+<aiml>
+	<category>
+		<pattern>_ меня зовут *</pattern>
+		<template>
+			<srai>
+				меня зовут <star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>меня зовут *</pattern>
+		<template>
+			<think>
+				<set name="symbol_name">undefined</set>
+				<set name="user-name"><star/></set>
+			</think>
+			Запомню ваше имя
+		</template>
+	</category>
+
+	<category>
+		<pattern>здарова</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>добрый день</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>здравствуй</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>привет</pattern>
+		<template>
+			<random>
+				<li>
+					Привет, <get name="user-name"/>
+				</li>
+				<li>
+					Здарова, <get name="user-name"/>
+				</li>
+				<li>
+					Приветсвую, <get name="user-name"/>
+				</li>
+				<li>
+					Здравствуйте, <get name="user-name"/>
+				</li>
+				<li>
+					Здравствуй, <get name="user-name"/>
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>кто ты</pattern>
+		<template>
+			Я бот, который разбирается в символах греческого алфавита. Но пока не все выучил, к сожалению.
+			На данный момент знаю такие:
+			- α: альфа
+			- β: бета
+			- ɣ: гамма
+			- ε: эпсилон
+			- ι: йота
+			- λ: лямбда
+			- π: пи
+			- σ: сигма
+			- τ: тау
+			- ψ: пcи
+			Могу рассказать что-то интересное про каждый из них и распознать символ на фото.
+		</template>
+	</category>
+
+
+
+
+
+	<category>
+		<pattern>РАССКАЖИ О СЕБЕ</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что ты умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что ты умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>скажи *</pattern>
+		<template>
+			<star/>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>Кря *</pattern>
+		<template>
+			<srai>Кря</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ Кря *</pattern>
+		<template>
+			<srai>Кря</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ Кря</pattern>
+		<template>
+			<srai>Кря</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Кря</pattern>
+		<template>
+			<random>
+				<li>Кря</li>
+				<li>Кря Кря</li>
+				<li>Кря Кря Кря</li>
+				<li>Кря!</li>
+				<li>Кря Кря!</li>
+				<li>Кря Кря Кря!</li>
+				<li>Кря?</li>
+				<li>Кря Кря?</li>
+				<li>Кря Кря Кря?</li>
+				<li>
+					Кря, <get name="user-name" />
+				</li>
+				<li>
+					Кря Кря, <get name="user-name" />
+				</li>
+				<li>
+					Кря Кря Кря, <get name="user-name" />
+				</li>
+				<li>
+					Кря, <get name="user-name" />!
+				</li>
+				<li>
+					Кря Кря, <get name="user-name" />!
+				</li>
+				<li>
+					Кря Кря Кря, <get name="user-name" />!
+				</li>
+				<li>
+					Кря, <get name="user-name" />?
+				</li>
+				<li>
+					Кря Кря, <get name="user-name" />?
+				</li>
+				<li>
+					Кря Кря Кря, <get name="user-name" />?
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Аудио</pattern>
+		<template>Жаль, я не умею слушать</template>
+	</category>
+
+	<category>
+		<pattern>войс</pattern>
+		<template>Я хоть и бот, но голосовые тоже не люблю</template>
+	</category>
+
+	<category>
+		<pattern>Видео</pattern>
+		<template>Спасибо, но, кажется, у меня сломалась кнопка запуска</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<template>
+			Я такое не знаю, <get name="user-name"/>
+		</template>
+	</category>
+</aiml>
