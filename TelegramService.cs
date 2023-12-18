@@ -17,6 +17,7 @@ namespace AIMLTGBot
 {
     public class TelegramService : IDisposable
     {
+        static string currentPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
         private readonly TelegramBotClient client;
         private readonly AIMLService aiml;
         // CancellationToken - инструмент для отмены задач, запущенных в отдельном потоке
@@ -25,7 +26,6 @@ namespace AIMLTGBot
         private DataHolder dataHolder = new DataHolder();
         private MagicEye processor = new MagicEye();
         private BaseNetwork network = new AccordNet(new int[] { 2400, 500, 100, 10 });
-        string currentPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
         public TelegramService(string token, AIMLService aimlService)
         {
             dataHolder.loadData(
@@ -126,11 +126,26 @@ namespace AIMLTGBot
                         prediction = "undef";
                         break;
                 }
-                await client.SendTextMessageAsync(
+                var answer = aiml.Talk(chatId, username, $"predicted {prediction}");
+                if (answer.EndsWith("сигма."))
+                {
+                    using (FileStream fs = System.IO.File.Open($"{currentPath}\\sigma.png", FileMode.Open))
+                    {
+                        await client.SendPhotoAsync(
+                           message.Chat.Id,
+                           fs,
+                           answer,
+                           cancellationToken: cancellationToken
+                       );
+                    }
+                } else
+                {
+                    await client.SendTextMessageAsync(
                     message.Chat.Id,
-                    aiml.Talk(chatId, username, $"predicted {prediction}"),
+                    answer,
                     cancellationToken: cancellationToken
                 );
+                }
                 return;
             }
             // Можно обрабатывать разные виды сообщений, просто для примера пробросим реакцию на них в AIML
