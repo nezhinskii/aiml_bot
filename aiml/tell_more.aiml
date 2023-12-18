@@ -8,6 +8,13 @@
 		<template><srai>tell more</srai></template>
 	</category>
 
+  <category>
+    <pattern>расскажи еще</pattern>
+    <template>
+      <srai>tell more</srai>
+    </template>
+  </category>
+
 	<category>
 		<pattern>что еще ты знаешь</pattern>
 		<template><srai>tell more</srai></template>
@@ -50,6 +57,11 @@
 	
 	<category>
 		<pattern>а еще</pattern>
+		<template><srai>tell more</srai></template>
+	</category>
+  
+  	<category>
+		<pattern>еще</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
 	
