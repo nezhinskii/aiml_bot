@@ -29,6 +29,27 @@
 		</template>
 	</category>
 
+  <category>
+    <pattern>хай</pattern>
+    <template>
+      <srai>привет</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>hi</pattern>
+    <template>
+      <srai>привет</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>hello</pattern>
+    <template>
+      <srai>привет</srai>
+    </template>
+  </category>
+
 	<category>
 		<pattern>добрый день</pattern>
 		<template>
@@ -66,6 +87,27 @@
 		</template>
 	</category>
 
+  <category>
+    <pattern>ты кто</pattern>
+    <template>
+      <srai>кто ты</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>что умеешь?</pattern>
+    <template>
+      <srai>кто ты</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>что умеешь</pattern>
+    <template>
+      <srai>кто ты</srai>
+    </template>
+  </category>
+
 	<category>
 		<pattern>кто ты</pattern>
 		<template>
@@ -84,10 +126,6 @@
 			Могу рассказать что-то интересное про каждый из них и распознать символ на фото.
 		</template>
 	</category>
-
-
-
-
 
 	<category>
 		<pattern>РАССКАЖИ О СЕБЕ</pattern>
