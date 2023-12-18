@@ -23,6 +23,16 @@
 	</category>
 	
 	<category>
+		<pattern>о чем мы *</pattern>
+		<template><srai>what are we talking about</srai></template>
+	</category>
+	
+	<category>
+		<pattern>о чем мы</pattern>
+		<template><srai>what are we talking about</srai></template>
+	</category>
+	
+	<category>
 		<pattern>а о чем мы разговариваем</pattern>
 		<template><srai>what are we talking about</srai></template>
 	</category>
@@ -37,7 +47,10 @@
 		<template>
 			<condition name="symbol_name">
 				<li value="undefined">Да пока просто болтаем</li>
-				<li>О символе <get name="symbol_name"/></li>
+				<li>
+					<srai>translate symbol</srai>
+					О символе <get name="translated_symbol_name"/>
+				</li>
 			</condition>
 		</template>
 	</category>

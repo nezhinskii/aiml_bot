@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ACQUAINTANCE -->
+<aiml>
+	<category>
+		<pattern>predicted *</pattern>
+		<template>
+			<think>
+				<set name = "symbol_name"><star/></set>
+				<set name = "fact_deep">1</set>
+				<srai>translate symbol</srai>
+			</think>
+			<random>
+				<li>Мне кажется, это символ <get name="translated_symbol_name"/></li>
+				<li>Это похоже на символ <get name="translated_symbol_name"/></li>
+				<li>Я думаю, это символ <get name="translated_symbol_name"/></li>
+				<li>Выглядит как <get name="translated_symbol_name"/></li>
+				<li>Я бы сказал, это <get name="translated_symbol_name"/></li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что ты знаешь об этом символе</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>что ты знаешь о нем</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>что можешь рассказать о нем</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>расскажи что-то о нем</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>расскажи что-то об этом символе</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>расскажи факт про него</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>расскажи факты про него</pattern>
+		<template>
+			<srai>tell about <get name="symbol_name"/></srai>
+		</template>
+	</category>
+</aiml>

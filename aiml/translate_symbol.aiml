@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ACQUAINTANCE -->
+<aiml>
+	<category>
+		<pattern>translate symbol</pattern>
+		<template>
+			<think>
+			<condition name="symbol_name">
+				<li value="alpha"><set name="translated_symbol_name">альфа</set></li>
+				<li value="beta"><set name="translated_symbol_name">бета</set></li>
+				<li value="gamma"><set name="translated_symbol_name">гамма</set></li>
+				<li value="epsilon"><set name="translated_symbol_name">эпсилон</set></li>
+				<li value="iota"><set name="translated_symbol_name">йота</set></li>
+				<li value="lambda"><set name="translated_symbol_name">лямбда</set></li>
+				<li value="pi"><set name="translated_symbol_name">пи</set></li>
+				<li value="sigma"><set name="translated_symbol_name">сигма</set></li>
+				<li value="tau"><set name="translated_symbol_name">тау</set></li>
+				<li value="psi"><set name="translated_symbol_name">пси</set></li>
+			</condition>
+			</think>
+		</template>
+	</category>
+</aiml>

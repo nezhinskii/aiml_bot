@@ -19,7 +19,6 @@
 				<set name="symbol_name">undefined</set>
 				<set name="user-name"><star/></set>
 			</think>
-			Запомню ваше имя
 		</template>
 	</category>
 
