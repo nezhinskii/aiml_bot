@@ -149,7 +149,7 @@
 	</category>
 
 	<category>
-		<pattern>>epsilon2</pattern>
+		<pattern>epsilon2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -159,7 +159,7 @@
 	</category>
 
 	<category>
-		<pattern>>epsilon3</pattern>
+		<pattern>epsilon3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>
@@ -180,7 +180,7 @@
 	</category>
 
 	<category>
-		<pattern>>psi2</pattern>
+		<pattern>psi2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -190,7 +190,7 @@
 	</category>
 
 	<category>
-		<pattern>>psi3</pattern>
+		<pattern>psi3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>
@@ -210,7 +210,7 @@
 	</category>
 
 	<category>
-		<pattern>>lambda2</pattern>
+		<pattern>lambda2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -220,7 +220,7 @@
 	</category>
 
 	<category>
-		<pattern>>lambda3</pattern>
+		<pattern>lambda3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>
@@ -240,7 +240,7 @@
 	</category>
 
 	<category>
-		<pattern>>pi2</pattern>
+		<pattern>pi2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -250,7 +250,7 @@
 	</category>
 
 	<category>
-		<pattern>>pi3</pattern>
+		<pattern>pi3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>
@@ -270,7 +270,7 @@
 	</category>
 
 	<category>
-		<pattern>>sigma2</pattern>
+		<pattern>sigma2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -280,7 +280,7 @@
 	</category>
 
 	<category>
-		<pattern>>sigma3</pattern>
+		<pattern>sigma3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>
@@ -300,7 +300,7 @@
 	</category>
 
 	<category>
-		<pattern>>tau2</pattern>
+		<pattern>tau2</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">3</set>
@@ -310,7 +310,7 @@
 	</category>
 
 	<category>
-		<pattern>>tau3</pattern>
+		<pattern>tau3</pattern>
 		<template>
 			<think>
 				<set name = "fact_deep">end</set>

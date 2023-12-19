@@ -34,7 +34,7 @@ namespace AIMLTGBot
                 $"{currentPath}\\old_data\\train.txt",
                 $"{currentPath}\\old_data\\test.txt"
             );
-            network.TrainOnDataSet(dataHolder.trainData, 35, 1e-9, true, 1e-2);
+            //network.TrainOnDataSet(dataHolder.trainData, 35, 1e-9, true, 1e-2);
             double accuracy = dataHolder.testData.TestNeuralNetwork(network);
             Console.WriteLine(accuracy.ToString());
             aiml = aimlService;

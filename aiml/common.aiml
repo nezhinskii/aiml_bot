@@ -42,6 +42,20 @@
       <srai>привет</srai>
     </template>
   </category>
+
+	<category>
+		<pattern>/start</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>start</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
   
   <category>
     <pattern>hello</pattern>
@@ -221,6 +235,75 @@
 		</template>
 	</category>
 
+	<category>
+		<pattern>* как дела</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как дела *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как жизнь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как жизнь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как жизнь *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>как ты *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как ты</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как ты</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как дела</pattern>
+		<template>
+			<random>
+				<li>Неплохо. Если надо узнать, что я умею, так и спросите</li>
+				<li>Все как обычно. Если надо узнать, что я умею, так и спросите</li>
+				<li>Пойдет. Если надо узнать, что я умею, так и спросите</li>
+				<li>Хорошо. Если надо узнать, что я умею, так и спросите</li>
+			</random>
+		</template>
+	</category>
+	
 	<category>
 		<pattern>Аудио</pattern>
 		<template>Жаль, я не умею слушать</template>

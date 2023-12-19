@@ -68,12 +68,182 @@
 	</category>
 
 	<category>
+		<pattern>* альфа *</pattern>
+		<template><srai>tell about alpha</srai></template>
+	</category>
+	<category>
+		<pattern>альфа *</pattern>
+		<template><srai>tell about alpha</srai></template>
+	</category>
+	<category>
+		<pattern>* альфа</pattern>
+		<template><srai>tell about alpha</srai></template>
+	</category>
+	<category>
+		<pattern>альфа</pattern>
+		<template><srai>tell about alpha</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* бета *</pattern>
+		<template><srai>tell about beta</srai></template>
+	</category>
+	<category>
+		<pattern>бета *</pattern>
+		<template><srai>tell about beta</srai></template>
+	</category>
+	<category>
+		<pattern>* бета</pattern>
+		<template><srai>tell about beta</srai></template>
+	</category>
+	<category>
+		<pattern>бета</pattern>
+		<template><srai>tell about beta</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* гамма *</pattern>
+		<template><srai>tell about gamma</srai></template>
+	</category>
+	<category>
+		<pattern>гамма *</pattern>
+		<template><srai>tell about gamma</srai></template>
+	</category>
+	<category>
+		<pattern>* гамма</pattern>
+		<template><srai>tell about gamma</srai></template>
+	</category>
+	<category>
+		<pattern>гамма</pattern>
+		<template><srai>tell about gamma</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* эпсилон *</pattern>
+		<template><srai>tell about epsilon</srai></template>
+	</category>
+	<category>
+		<pattern>эпсилон *</pattern>
+		<template><srai>tell about epsilon</srai></template>
+	</category>
+	<category>
+		<pattern>* эпсилон</pattern>
+		<template><srai>tell about epsilon</srai></template>
+	</category>
+	<category>
+		<pattern>эпсилон</pattern>
+		<template><srai>tell about epsilon</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* йота *</pattern>
+		<template><srai>tell about iota</srai></template>
+	</category>
+	<category>
+		<pattern>йота *</pattern>
+		<template><srai>tell about iota</srai></template>
+	</category>
+	<category>
+		<pattern>* йота</pattern>
+		<template><srai>tell about iota</srai></template>
+	</category>
+	<category>
+		<pattern>йота</pattern>
+		<template><srai>tell about iota</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* лямбда *</pattern>
+		<template><srai>tell about lambda</srai></template>
+	</category>
+	<category>
+		<pattern>лямбда *</pattern>
+		<template><srai>tell about lambda</srai></template>
+	</category>
+	<category>
+		<pattern>* лямбда</pattern>
+		<template><srai>tell about lambda</srai></template>
+	</category>
+	<category>
+		<pattern>лямбда</pattern>
+		<template><srai>tell about lambda</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* пи *</pattern>
+		<template><srai>tell about pi</srai></template>
+	</category>
+	<category>
+		<pattern>пи *</pattern>
+		<template><srai>tell about pi</srai></template>
+	</category>
+	<category>
+		<pattern>* пи</pattern>
+		<template><srai>tell about pi</srai></template>
+	</category>
+	<category>
+		<pattern>пи</pattern>
+		<template><srai>tell about pi</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* сигма *</pattern>
+		<template><srai>tell about sigma</srai></template>
+	</category>
+	<category>
+		<pattern>сигма *</pattern>
+		<template><srai>tell about sigma</srai></template>
+	</category>
+	<category>
+		<pattern>* сигма</pattern>
+		<template><srai>tell about sigma</srai></template>
+	</category>
+	<category>
+		<pattern>сигма</pattern>
+		<template><srai>tell about sigma</srai></template>
+	</category>
+
+	<category>
+		<pattern>* тау *</pattern>
+		<template><srai>tell about tau</srai></template>
+	</category>
+	<category>
+		<pattern>тау *</pattern>
+		<template><srai>tell about tau</srai></template>
+	</category>
+	<category>
+		<pattern>* тау</pattern>
+		<template><srai>tell about tau</srai></template>
+	</category>
+	<category>
+		<pattern>тау</pattern>
+		<template><srai>tell about tau</srai></template>
+	</category>
+	
+	<category>
+		<pattern>* пси *</pattern>
+		<template><srai>tell about psi</srai></template>
+	</category>
+	<category>
+		<pattern>пси *</pattern>
+		<template><srai>tell about psi</srai></template>
+	</category>
+	<category>
+		<pattern>* пси</pattern>
+		<template><srai>tell about psi</srai></template>
+	</category>
+	<category>
+		<pattern>пси</pattern>
+		<template><srai>tell about psi</srai></template>
+	</category>
+	
+	<category>
 		<pattern>tell about preprocessing</pattern>
 		<template>
 			<condition name = "transit_symbol_name">
 			<li value = "alpha"><srai>tell about alpha</srai></li>
 			<li value = "альфа"><srai>tell about alpha</srai></li>
-      <li value = "альфу"><srai>tell about alpha</srai></li>
+			<li value = "альфу"><srai>tell about alpha</srai></li>
 			<li value = "символ alpha"><srai>tell about alpha</srai></li>
 			<li value = "символ альфа"><srai>tell about alpha</srai></li>
 			<li value = "символе alpha"><srai>tell about alpha</srai></li>
