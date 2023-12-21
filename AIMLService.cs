@@ -11,6 +11,7 @@ namespace AIMLTGBot
     {
         readonly Bot bot;
         readonly Dictionary<long, User> users = new Dictionary<long, User>();
+        readonly Dictionary<long, bool> isInTrap = new Dictionary<long, bool>();
 
         public AIMLService()
         {
@@ -27,16 +28,30 @@ namespace AIMLTGBot
         {
             var result = "";
             User user;
+            bool isUserInTrap;
             if (!users.ContainsKey(userId))
             {
                 user = new User(userId.ToString(), bot);
                 users.Add(userId, user);
+                isInTrap.Add(userId, false);
                 Request r = new Request($"Меня зовут {userName}", user, bot);
                 result += bot.Chat(r).Output + System.Environment.NewLine;
             }
             else
             {
                 user = users[userId];
+            }
+            if (phrase.Contains("анекдот"))
+            {
+                isInTrap[userId] = true;          
+            } else if (phrase == "заплакать")
+            {
+                isInTrap[userId] = false;
+            }
+            isUserInTrap = isInTrap[userId];
+            if (isUserInTrap)
+            {
+                phrase = "анекдот";
             }
             result += bot.Chat(new Request(phrase, user, bot)).Output;
             return result;

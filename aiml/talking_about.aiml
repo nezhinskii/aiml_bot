@@ -2,44 +2,22 @@
 
 <!-- ACQUAINTANCE -->
 <aiml>
+
 	<category>
-		<pattern>О чем мы говорим</pattern>
+		<pattern>* о чем *</pattern>
 		<template><srai>what are we talking about</srai></template>
 	</category>
 	
 	<category>
-		<pattern>О чем мы разговариваем</pattern>
+		<pattern>о чем *</pattern>
 		<template><srai>what are we talking about</srai></template>
 	</category>
-	
+
 	<category>
-		<pattern>а о чем ты</pattern>
-		<template><srai>what are we talking about</srai></template>
-	</category>
-	
-	<category>
-		<pattern>а о чем мы говорим</pattern>
-		<template><srai>what are we talking about</srai></template>
-	</category>
-	
-	<category>
-		<pattern>о чем мы *</pattern>
-		<template><srai>what are we talking about</srai></template>
-	</category>
-	
-	<category>
-		<pattern>о чем мы</pattern>
-		<template><srai>what are we talking about</srai></template>
-	</category>
-	
-	<category>
-		<pattern>а о чем мы разговариваем</pattern>
-		<template><srai>what are we talking about</srai></template>
-	</category>
-	
-	<category>
-		<pattern>О чем идет речь</pattern>
-		<template><srai>what are we talking about</srai></template>
+		<pattern>* о чем</pattern>
+		<template>
+			<srai>what are we talking about</srai>
+		</template>
 	</category>
 	
 	<category>

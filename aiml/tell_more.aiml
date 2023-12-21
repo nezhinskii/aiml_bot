@@ -2,7 +2,6 @@
 
 <!-- ACQUAINTANCE -->
 <aiml>
-	
 	<category>
 		<pattern>* еще *</pattern>
 		<template><srai>tell more</srai></template>
@@ -52,4 +51,5 @@
 			</condition>
 		</template>
 	</category>
+
 </aiml>

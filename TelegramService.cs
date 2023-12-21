@@ -58,8 +58,13 @@ namespace AIMLTGBot
                 var messageText = update.Message.Text;
 
                 Console.WriteLine($"Received a '{messageText}' message in chat {chatId} with {username}.");
-
-                string answer = aiml.Talk(chatId, username, messageText);
+                var qInd = messageText.LastIndexOf('?');
+                string formattedMessageText = messageText.Replace('ё','е');
+                if (qInd != -1)
+                {
+                    formattedMessageText = messageText.Insert(qInd, " ");
+                }
+                string answer = aiml.Talk(chatId, username, formattedMessageText);
                 if (answer.Trim() == "")
                 {
                     answer = "Не совсем уловил мысль";

@@ -20,52 +20,61 @@
 		</template>
 	</category>
 
-	<category>
-		<pattern>что ты знаешь об этом символе</pattern>
-		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
-		</template>
-	</category>
 	
 	<category>
-		<pattern>что ты знаешь о нем</pattern>
+		<pattern>* о ней</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
-	
+
 	<category>
-		<pattern>что можешь рассказать о нем</pattern>
+		<pattern>* о ней *</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
-	
+
+
 	<category>
-		<pattern>расскажи что-то о нем</pattern>
+		<pattern>* о этом</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
-	
+
 	<category>
-		<pattern>расскажи что-то об этом символе</pattern>
+		<pattern>* о этом *</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
-	
+
 	<category>
-		<pattern>расскажи факт про него</pattern>
+		<pattern>* о него</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
-	
+
 	<category>
-		<pattern>расскажи факты про него</pattern>
+		<pattern>* о него *</pattern>
 		<template>
-			<srai>tell about <get name="symbol_name"/></srai>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о нем</pattern>
+		<template>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о нем *</pattern>
+		<template>
+			<srai><get name="symbol_name"/><get name="fact_deep"/></srai>
 		</template>
 	</category>
 </aiml>

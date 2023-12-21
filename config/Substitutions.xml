@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
-	<item name="ещё" value="еще" />
+	<item name="анекдоты" value="анекдот"/>
 	<item name="об" value="о" />
 	<item name="про" value="о" />
 	<item name="про" value="о" />
@@ -9,7 +9,7 @@
 	<item name="альфу" value="альфа" />
 
 	<item name="бете" value="бета" />
-	<item name="бету" value="бетаа" />
+	<item name="бету" value="бета" />
 
 	<item name="гамме" value="гамма" />
 	<item name="гамму" value="гамма" />
