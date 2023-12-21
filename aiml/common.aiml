@@ -89,7 +89,7 @@
 					Здарова, <get name="user-name"/>
 				</li>
 				<li>
-					Приветсвую, <get name="user-name"/>
+					Приветствую, <get name="user-name"/>
 				</li>
 				<li>
 					Здравствуйте, <get name="user-name"/>

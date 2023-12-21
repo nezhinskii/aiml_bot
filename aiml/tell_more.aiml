@@ -4,74 +4,42 @@
 <aiml>
 	
 	<category>
-		<pattern>расскажи еще *</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-  <category>
-    <pattern>расскажи еще</pattern>
-    <template>
-      <srai>tell more</srai>
-    </template>
-  </category>
-
-	<category>
-		<pattern>что еще ты знаешь</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>что еще ты знаешь *</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>а что еще ты знаешь *</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>какие еще факты *</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>какие еще факты</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>что еще можешь расскзать *</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>что еще можешь расскзать</pattern>
-		<template><srai>tell more</srai></template>
-	</category>
-
-	<category>
-		<pattern>что еще</pattern>
+		<pattern>* еще *</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
 	
 	<category>
-		<pattern>а еще</pattern>
+		<pattern>* еще</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
-  
-  	<category>
+	
+	<category>
+		<pattern>еще *</pattern>
+		<template><srai>tell more</srai></template>
+	</category>
+	
+	<category>
 		<pattern>еще</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
 	
 	<category>
-		<pattern>а еще *</pattern>
+		<pattern>* больше *</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
 	
 	<category>
-		<pattern>расскажи больше *</pattern>
+		<pattern>* больше</pattern>
+		<template><srai>tell more</srai></template>
+	</category>
+	
+	<category>
+		<pattern>больше *</pattern>
+		<template><srai>tell more</srai></template>
+	</category>
+	
+	<category>
+		<pattern>больше</pattern>
 		<template><srai>tell more</srai></template>
 	</category>
 	
